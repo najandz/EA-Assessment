@@ -1,0 +1,42 @@
+  html {
+            background: #fff; /*white Background*/
+        }
+
+        /**/
+        a {
+            display: inline-block;
+            padding: 0 50px;
+            letter-spacing: -2px;
+            text-shadow: 0 1px 0 #DEDEDE;
+            border: 1px solid #908f8f;
+            border-radius: 10px;
+            box-shadow: 0 2px 2px #4e4c4c, 0 0 0 6px #cdcdcd, 0 0 0 8px #fff,0 0 0 10px #666, 0 5px 7px 7px #c4c2c2, inset 0 28px 0 rgba(255,255,255, .2); /* external border with shadow*/
+            background: #C7C7C7;
+            position: relative;
+             line-height: 60px; /* height of button*/
+            font-size: 25px;
+            text-transform: uppercase; /* Uppercase text format*/
+            color: #555;
+            font-family: arial;
+            text-decoration: none;
+            font-weight: bold;
+             margin: 20px 0 0 20px;
+        }
+        /* display 'star' on left and right of text */
+            a::before,
+            a::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 16px;
+                height: 16px;
+                left: 18px;
+                top: 22px;
+                background-image: url('images/star.png');
+                background-position: top left;
+            }
+
+            a:after {
+                left: auto;
+                right: 17px;
+            }
